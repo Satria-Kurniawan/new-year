@@ -57,13 +57,14 @@ export default function CountdownTimer() {
         {currentTime.toLocaleTimeString()}
       </div>
       <br />
-      <h1 className="text-2xl font-semibold">New Year Countdown</h1>
+
       {isNewYear ? (
         <p className="sm:text-8xl text-5xl font-bold bg-gradient-to-r from-violet-400 to-fuchsia-300 text-transparent bg-clip-text">
           Happy New Year!
         </p>
       ) : (
         <>
+          <h1 className="text-2xl font-semibold">New Year Countdown</h1>
           {timeLeft.days > 0 && (
             <p className="sm:text-8xl text-5xl font-bold bg-gradient-to-r from-violet-400 to-fuchsia-300 text-transparent bg-clip-text">
               {timeLeft.days} {timeLeft.days === 1 ? "day" : "days"}{" "}
